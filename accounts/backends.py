@@ -2,7 +2,7 @@ from django.contrib.auth.models import User
 from django.db.models import Q
 
 
-class CaseInsensitiveAuth:
+class EmailAuth:
     """
     Authenticate a of User by using a case-insensitive query to check a
     combination of the supplied email/username and password.
@@ -43,3 +43,4 @@ class CaseInsensitiveAuth:
             return None
         except User.DoesNotExist:
             return None
+from django.contrib.auth.models import User
